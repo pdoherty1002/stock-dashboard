@@ -17,6 +17,8 @@ Python, Streamlit, yfinance, pandas
 pip install streamlit yfinance pandas
 streamlit run app.py
 ```
+## Run online
+https://stock-dashboard-6ueahhi3aeobagxnunb8ak.streamlit.app/
 
 ## Status
 v1 — data display and visualization. No predictive/analytical features yet by design; this version focuses on a clean, reliable data pipeline first.
