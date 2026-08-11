@@ -6,7 +6,7 @@ st.set_page_config(page_title="Stock Dashboard", page_icon="📈", layout="wide"
 
 st.title("Stock Analysis Dashboard")
 
-TICKERS = ["AAPL", "MSFT", "GOOGL", "AMZN", "NVDA"]
+TICKERS = ["AAPL", "MSFT", "GOOGL", "AMZN", "NVDA", "UBER"]
 PERIODS = ["1mo", "3mo", "6mo", "1y", "2y", "5y"]
 
 col_a, col_b = st.columns(2)
@@ -25,6 +25,7 @@ try:
 
 except Exception as e:
     st.error(f"Something went wrong fetching data: {e}")
+    st.stop()
 
 # Metric - goes wherever you want it to visually appear, e.g. right after the selectbox
 latest_price = history["Close"].iloc[-1]
