@@ -20,5 +20,8 @@ streamlit run app.py
 ## Run online
 https://stock-dashboard-6ueahhi3aeobagxnunb8ak.streamlit.app/
 
+## Known limitations
+Uses Yahoo Finance's free, unofficial API via `yfinance`. Occasionally rate-limited when running on shared cloud infrastructure (Streamlit Community Cloud) — works reliably when run locally.
+
 ## Status
 v1 — data display and visualization. No predictive/analytical features yet by design; this version focuses on a clean, reliable data pipeline first.
